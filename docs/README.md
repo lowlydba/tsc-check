@@ -1,10 +1,6 @@
 # tsc Check GitHub Action
 
-This GitHub Action runs a TypeScript compilation check (`tsc`) and integrates with [ReviewDog](https://github.com/reviewdog/reviewdog) to provide feedback on pull requests or commits.
-
-## Background
-
-When you have a TypeScript project that already contains transpile errors, it can be difficult to enforce strict type safety without blocking all progress. This action is designed for scenarios where you want to make incremental improvements: it allows you to create a status check that only blocks pull requests if they introduce new errors in modified files, **or** if regressions in untouched files cause the total number of errors to exceed a configurable high water mark.
+This GitHub Action runs a TypeScript compilation check (`tsc`) and integrates with [ReviewDog](https://github.com/reviewdog/reviewdog) to provide feedback on pull requests by reporting TypeScript errors. It is designed to help teams incrementally improve type safety in projects with a high water mark for existing errors. The action fails if new errors are introduced in modified files, or if the total number of errors exceeds this threshold.
 
 The high water mark can be set manually, or updated from an external process as your project improves. This enables teams to gradually reduce technical debt while still maintaining forward momentum.
 
