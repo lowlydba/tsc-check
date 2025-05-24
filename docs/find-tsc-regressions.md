@@ -9,15 +9,11 @@ When you edit one file in your branch, you may inadvertently introduce errors el
 2. Run `tsc` on your **feature** branch
 3. Diff the two error outputs to spot new issues
 
----
-
 ## 📋 Prerequisites
 
 - Node.js & npm/Yarn installed
-- A `tsconfig.json` at the repo root that exactly reflects your “build” configuration
+- A `tsconfig.json` at the repo root that reflects your “build” configuration
 - Git CLI
-
----
 
 ### 🛠️ Step 1: Get base errors on `main`
 

@@ -25,6 +25,12 @@ inputs:
       Default is `0`.
     default: "0"
     required: false
+  help-doc-url:
+    description: |
+      URL to the help documentation for this action, if you wish to provide your own.
+      This will be used in the action's failure message.
+      Default is `https://github.com/lowlydba/tsc-check/blob/main/docs/find-tsc-regressions.md`
+    default: "https://github.com/lowlydba/tsc-check/blob/main/docs/find-tsc-regressions.md"
   ### Flags for reviewdog ###
   level:
     description: |
@@ -99,3 +105,4 @@ runs:
         INPUT_TOOL_NAME: ${{ inputs.tool-name }}
         INPUT_TSC_FLAGS: ${{ inputs.tsc-flags }}
         INPUT_HIGH_WATER_MARK: ${{ inputs.high-water-mark }}
+        INPUT_HELP_DOC_URL: ${{ inputs.help-doc-url }}
