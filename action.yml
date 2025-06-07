@@ -1,6 +1,9 @@
 ---
 name: "tsc Check"
 description: "🛡️🐶 GitHub Action to check TypeScript errors with tsc and ReviewDog, enforcing error thresholds and incremental type safety."
+branding:
+  icon: "shield"
+  color: "blue"
 inputs:
   reviewdog-version:
     description: "Version of ReviewDog to use"
