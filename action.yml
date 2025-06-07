@@ -1,6 +1,6 @@
 ---
 name: "tsc Check"
-description: "Runs a tsc compilation check with ReviewDog."
+description: "🛡️🐶 GitHub Action to check TypeScript errors with tsc and ReviewDog, enforcing error thresholds and incremental type safety."
 inputs:
   reviewdog-version:
     description: "Version of ReviewDog to use"
