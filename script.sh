@@ -33,7 +33,7 @@ if [ "$error_count" -gt "$INPUT_HIGH_WATER_MARK" ]; then
   echo "::error::High water mark is $INPUT_HIGH_WATER_MARK, but there are $error_count errors. Did you introduce regressions in files that were not changed in this PR? For help, see $INPUT_HELP_DOC_URL"
   exit 1
 fi
-echo "✅ Error count is below high water mark of $INPUT_HIGH_WATER_MARK, continuing with reviewdog"
+echo "✅ Error count is at or below high water mark of $INPUT_HIGH_WATER_MARK, continuing with reviewdog ..."
 
 # Run check
 echo "::group::📝 Running tsc with reviewdog 🐶"
