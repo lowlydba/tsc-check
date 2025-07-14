@@ -12,7 +12,7 @@ When you edit one file in your branch, you may inadvertently introduce errors el
 ## 📋 Prerequisites
 
 - Node.js & npm/Yarn installed
-- A `tsconfig.json` at the repo root that reflects your “build” configuration
+- A `tsconfig.json` at the project root that reflects your “build” configuration
 - Git CLI
 
 ### 🛠️ Step 1: Get base errors on `main`
