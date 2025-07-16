@@ -14,8 +14,8 @@ if [ $tsc_rc -eq 134 ]; then
 fi
 
 # Extract the error count
-# Because the "summary" output with the total error count is a wrapper and not pipeable
-error_count=$(echo "$tsc_output" | wc -l)
+# Count occurrences of TypeScript error codes: 'error TS00'
+error_count=$(echo "$tsc_output" | grep -Eo 'error TS[0-9]{1,6}' | wc -l)
 
 # If no errors were found, the count is 0
 if [ -z "$error_count" ]; then
